@@ -10,7 +10,7 @@ RUN apt-get -qq update && \
     apt-get -qq update && \
     apt-get -qq install -y libspotify12 libspotify-dev python python-pkg-resources libffi-dev python-pip python-dev lame flac vorbis-tools && \
     mkdir /usr/src/spotify-ripper && \
-    curl -sL https://api.github.com/repos/ElectryDev/spotify-ripper/tarball | tar xz -C /usr/src/spotify-ripper --strip-components=1 && \
+    curl -sL https://api.github.com/repos/SolidHal/spotify-ripper/tarball | tar xz -C /usr/src/spotify-ripper --strip-components=1 && \
     pip install --upgrade pip && \
     cd /usr/src/spotify-ripper && pip install --upgrade . && \
     apt-get -qq --purge autoremove -y libffi-dev python-pip python-dev libspotify-dev curl apt-transport-https apt-transport-https && \
